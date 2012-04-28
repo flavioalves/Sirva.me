@@ -1,0 +1,12 @@
+commom: &commom
+  adapter: postgresql
+  encoding: utf8
+  username: postgres
+
+development:
+  <<: *commom
+  database: sirvame_development
+
+test:
+  <<: *commom
+  database: sirvame_test

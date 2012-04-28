@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:image" content="http://valenca.sirva.me/assets/layout/logo2.png" />
+    <title><%= page_title %></title>
+    <%= csrf_meta_tag %>
+    <%= favicon_link_tag %>
+    <%= stylesheet_link_tag 'fonts/open_sans' %>
+    <%= stylesheet_link_tag 'application' %>
+    <!--[if lt IE 9]><%= javascript_include_tag 'html5' %><![endif]-->
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="main">
+        <div class="container">
+          <h1 class="logo">
+            <%= link_to image_tag('layout/logo.png', alt: page_title), root_path, title: page_title %>
+          </h1>
+          <nav>
+            <ul>
+              <li><%= link_to 'fale-com@sirva.me', 'mailto:fale-com@sirva.me', title: 'Envie-nos um e-mail. Ficaremos felizes!' %></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="body">
+        <%= yield %>
+      </section>
+      <footer>
+        <div class="container">
+          <%= link_to image_tag('layout/logo1.png', alt: page_title), root_path, title: page_title, class: 'logo' %>
+          <%= link_to 'who', 'http://bazzarella.com', target: '_blank', title: 'Felipe Bazzarella', class: 'who' %>
+        </div>
+      </footer>
+    </div>
+    <%= render './metrics' %>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>

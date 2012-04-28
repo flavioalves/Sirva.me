@@ -1,0 +1,19 @@
+<header class="body search">
+	<form action="/" method="get" class="container">
+		<h3>Encontre o que precisa em Valença</h3>
+		<div>
+			<input id="search-field" type="text" name="encontrar" value="<%= normalize_search_params(params[:encontrar]) %>" placeholder="Exemplos: água, pizza, lanchonete, academia... e clique na lupa »" />
+			<span class="add-on">
+				<%= image_submit_tag 'layout/zoom_tool.png', alt: 'Encontrar', id: 'submit-search' %>
+			</span>
+		</div>
+		<%= render 'addthis' %>
+	</form>
+</header>
+<div class="container main-content">
+	<p id="companies-count">
+		Já temos um total de <strong><%= Company.count %></strong> empresas cadastradas.
+		E este número vai continuar crescendo...
+	</p>
+	<%= render 'search_results' %>
+</div>

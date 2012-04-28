@@ -1,0 +1,29 @@
+Company:
+  fields:
+    default: name, phone, address, segments, products, plus
+    csv: name, phone, segments, products
+    options:
+      booleans:
+        plus: Active, Inactive
+  search: name, segments, products
+  application: Sirva.me
+
+Search:
+  fields:
+    default: terms, created_at
+    form: terms
+  order_by: -created_at
+  application: Sirva.me
+
+AdminUser:
+  fields:
+    default: first_name, last_name, role, email, locale
+    list: email, role, status
+    form: first_name, last_name, role, email, password, password_confirmation, locale, status
+    options:
+      selectors: role, locale
+      booleans:
+        status: Active, Inactive
+  filters: status, role
+  search: first_name, last_name, email, role
+  application: Sirva.me

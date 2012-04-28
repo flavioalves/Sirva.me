@@ -1,0 +1,9 @@
+'pt-BR':
+  time:
+    formats:
+      default: '%d/%m/%Y - %Hh%M'
+
+  activerecord:
+    errors:
+      messages:
+        blank: 'deve ser preenchido'
