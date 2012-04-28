@@ -4,7 +4,7 @@ Para saber sobre o sistema, visite [este link](http://felipebazzarella.wordpress
 
 ### Rodando Localmente
 
-Confira o config/database.yml, veja se está tudo certo e rode:
+Confira o `config/database.yml`, veja se está tudo certo e rode:
 	
 	bundle install
 
@@ -14,13 +14,13 @@ Confira o config/database.yml, veja se está tudo certo e rode:
 
 	rails server thin
 
-Acesse a área administrativa:
-
-	http://localhost:3000/admin
-
-Importe as empresas à partir de um CSV (db/new_companies.csv):
+Importe as empresas à partir do CSV `db/new_companies.csv`:
 
 	rake companies:push
+
+Ou pela área administrativa:
+
+	http://localhost:3000/admin
 
 Rode as Specs:
 
@@ -38,13 +38,13 @@ Faça deploy automatizado no Heroku:
 
 ### Importante
 
-* Insira os tokens de suas contas em app/helpers/application_helper.rb.
-* Também insira os nomes de suas apps em lib/tasks/integrate.rake e lib/tasks/deploy.rake.
-* As configurações atuais para envio de e-mail utiliza o Sendgrid (Heroku Add-On) e exije sua atenção nos arquivos config/environments/staging.rb e config/environment/production.rb.
+* Insira os tokens de suas contas em `app/helpers/application_helper.rb`.
+* Também insira os nomes de suas apps em `lib/tasks/integrate.rake` e `lib/tasks/deploy.rake`.
+* A configuração atual para envio de e-mail utiliza o SendGrid do Heroku e exije sua atenção nos arquivos `config/environments/staging.rb` e `config/environment/production.rb`.
 
 ### Licença
 
-Faça o que quiser com este repositório.
+Faça o que quiser com este repositório. Mas se for vender para o Google ou Facebook, me avise, por favor.
 
 ### Créditos
 
