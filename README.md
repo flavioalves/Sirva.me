@@ -8,6 +8,8 @@ Confira o config/database.yml, veja se está tudo certo e rode:
 	
 	bundle install
 
+	rake db:create
+
 	rake db:migrate
 
 	rails server thin
