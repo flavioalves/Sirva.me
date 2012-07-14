@@ -1,4 +1,4 @@
-## Sirva.me
+## Sirva.me [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/fbazzarella/Sirva.me)
 
 Para saber sobre o sistema, visite [este link](http://felipebazzarella.wordpress.com/2012/04/23/nasceu-meu-primeiro-filho-conheca-o-sirva-me).
 
